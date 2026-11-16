@@ -1,0 +1,745 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#78520f",
+          "surface": "#fff8f5",
+          "surface-container-high": "#f6e5da",
+          "primary-fixed": "#ffdad6",
+          "inverse-primary": "#ffb4ab",
+          "surface-container-lowest": "#ffffff",
+          "outline-variant": "#dec0bc",
+          "primary-fixed-dim": "#ffb4ab",
+          "primary-container": "#8f2924",
+          "on-background": "#221a13",
+          "surface-container-low": "#fff1e8",
+          "inverse-surface": "#382f27",
+          "surface-tint": "#a53933",
+          "tertiary-fixed-dim": "#ffb3ad",
+          "secondary-container": "#fdc97c",
+          "on-tertiary-fixed-variant": "#7f2926",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#ffddb0",
+          "on-secondary-fixed-variant": "#614000",
+          "error-container": "#ffdad6",
+          "tertiary-container": "#88302c",
+          "surface-dim": "#e7d7cc",
+          "on-tertiary-container": "#ffa9a1",
+          "background": "#fff8f5",
+          "on-primary-fixed-variant": "#85221e",
+          "on-tertiary-fixed": "#410003",
+          "outline": "#8a716e",
+          "secondary-fixed-dim": "#f1be72",
+          "on-primary-container": "#ffa9a0",
+          "on-surface": "#221a13",
+          "on-surface-variant": "#57423f",
+          "on-secondary-fixed": "#291800",
+          "surface-container": "#fcebe0",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#ffdad6",
+          "error": "#ba1a1a",
+          "inverse-on-surface": "#ffeee2",
+          "tertiary": "#6a1918",
+          "on-primary-fixed": "#410002",
+          "surface-container-highest": "#f0dfd4",
+          "on-primary": "#ffffff",
+          "on-error-container": "#93000a",
+          "surface-variant": "#f0dfd4",
+          "primary": "#6f1110",
+          "secondary": "#7d5714",
+          "surface-bright": "#fff8f5"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "gutter-desktop": "2rem",
+          "margin-desktop": "5rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin": "1.25rem",
+          "space-md": "1rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "title-lg": [
+            "Be Vietnam Pro"
+          ],
+          "display-xl-mobile": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Be Vietnam Pro"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Be Vietnam Pro"
+          ],
+          "body-md": [
+            "Be Vietnam Pro"
+          ],
+          "label-lg": [
+            "Be Vietnam Pro"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "headline-md-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Be Vietnam Pro"
+          ],
+          "title-md": [
+            "Be Vietnam Pro"
+          ],
+          "display-xl": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Be Vietnam Pro"
+          ]
+        },
+        "fontSize": {
+          "title-lg": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-xl-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "52px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-xl": [
+            "56px",
+            {
+              "lineHeight": "68px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(48,39,32,0.06)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-gutter"><a class="flex items-center gap-space-md group" data-path="home" href="#"><img alt="KÉN Brand Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ALJJyrD_TUkeTZh86S1o5VW8J1k5Gkh_jTKBOrYfF9c0HdxhlALttbpRL96RKRq8msH0Yuq7CyrSoJ00VoM3wvkgVR5qstmz-Kf0xYb1hVta_FL2lFo_AT12JqqnNV4o-s0P-ED1eoz72kxU8DoQSC4pyXaPPtgJqUjR02eEaJRkQZlXb7KVQdSx97Q-nNZSa0fgoh3mWYst-TgQe2_9dG06KXbmRqE2yiTKxnAuZc1MY_aA"></a><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-full shadow-[0_1px_4px_rgba(48,39,32,0.04)]" data-active-classes="bg-primary text-on-primary font-bold rounded-lg shadow-sm"><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Làng nghề</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="map" href="#">Bản đồ ảo</a><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary text-on-primary font-bold rounded-lg shadow-sm" data-path="station-1" href="#">Trạm 1: Tre</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="station-2" href="#">Trạm 2: Nan</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="station-3" href="#">Trạm 3: Dán</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="station-4" href="#">Trạm 4: Hoàn thiện</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="passport" href="#">Hộ chiếu</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex flex-col bg-surface-container px-space-md py-1.5 rounded-lg shadow-[0_1px_4px_rgba(48,39,32,0.03)]"><div class="flex items-center justify-between gap-space-sm mb-1"><span class="font-label-sm text-label-sm text-on-surface-variant">Hành trình di sản</span><span class="font-label-sm text-label-sm font-bold text-secondary">0/4 trạm</span></div><div class="w-24 h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full w-0 bg-secondary rounded-full transition-all duration-300"></div></div></div><div class="inline-flex items-center bg-surface-container-low p-0.5 rounded-full"><button class="px-2 py-1 font-label-sm text-label-sm font-semibold rounded-full bg-surface-container-lowest text-primary shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button">VI</button><button class="px-2 py-1 font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">EN</button></div><button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Trợ giúp trải nghiệm" type="button"><span class="material-symbols-outlined text-[18px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Station Header & Heritage Path -->
+<section class="w-full bg-surface-container-low/70 py-space-md shadow-sm">
+<div class="max-w-[1280px] mx-auto px-gutter flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Breadcrumb & Title Meta -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="home" href="#">
+<span class="material-symbols-outlined text-[15px]">home</span>
+<span>Làng nghề Chàng Sơn</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Trạm 1: Chọn tre</span>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">
+            Trạm 1: CHỌN TRE – Khởi đầu từ nguyên liệu
+          </h1>
+<span class="bg-secondary-container/60 text-on-secondary-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+            Giai đoạn tinh tuyển
+          </span>
+</div>
+</div>
+<!-- Action & Navigation Cluster -->
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high transition-colors cursor-pointer" id="guide-modal-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span>Hướng dẫn cách làm</span>
+</button>
+<a class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" data-path="map" href="#">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span>Trở về bản đồ làng</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive Bamboo Workshop Layout -->
+<div class="max-w-[1280px] w-full mx-auto px-gutter py-space-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- LEFT COLUMN: Step Progression (3 Cols) -->
+<aside class="lg:col-span-3 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Quy trình thủ công</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Trạm 1: Chọn Tre</span>
+</div>
+<span class="px-2 py-1 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded" id="step-badge-counter">
+            Bước 1/3
+          </span>
+</div>
+<!-- 3-Step Milestones -->
+<div class="flex flex-col gap-space-md relative">
+<!-- Connector line -->
+<div class="absolute left-4 top-4 bottom-4 w-0.5 bg-surface-container-high z-0"></div>
+<!-- Step 1 -->
+<div class="relative z-10 flex items-start gap-space-sm group">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm transition-transform group-hover:scale-105" id="step-icon-1">
+              1
+            </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-lg text-label-lg font-semibold text-primary">Khám phá tre Chàng Sơn</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Phân tích mật độ thớ và tuổi tre bánh tẻ vùng Xứ Đoài.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex items-start gap-space-sm group">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm transition-transform group-hover:scale-105" id="step-icon-2">
+              2
+            </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface" id="step-title-2">Quan sát &amp; Chọn mẫu</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tìm gióng tre thẳng, thớ thịt dày dặn không mắt khuyết.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex items-start gap-space-sm group">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm transition-transform group-hover:scale-105" id="step-icon-3">
+              3
+            </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface-variant" id="step-title-3">Đóng dấu triện xác nhận</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nhận ấn ký KÉN và mở khóa sang trạm chẻ nan.</p>
+</div>
+</div>
+</div>
+<!-- Bamboo Anatomy Micro-Insight -->
+<div class="bg-surface-container-low p-space-md rounded-lg mt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[17px]">architecture</span>
+<span>Tiêu chuẩn nan Chàng Sơn</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Nghệ nhân chỉ lấy phần cật và lớp thịt sát cật của thân tre. Bỏ ruột xốp để nan quạt khi xếp khít lại không bị xô lệch hoặc gãy ngậm.
+          </p>
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm pt-2">
+<span>Tuổi thu hoạch: 3 - 4 năm</span>
+<span>Gióng dài: &gt; 45cm</span>
+</div>
+</div>
+</div>
+<!-- Workshop Atmosphere Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[32px]">forest</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Rừng tre Thạch Thất</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hấp thu tinh khí vùng gò đồi bán sơn địa, cho tre độ dẻo đàn hồi cực đại.</span>
+</div>
+</div>
+</aside>
+<!-- CENTER COLUMN: Interactive Selection Arena (6 Cols) -->
+<main class="lg:col-span-6 flex flex-col gap-space-lg">
+<!-- Arena Stage Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Interactive Prompt banner -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+              Tương tác trực quan
+            </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant" id="arena-status">
+              Chưa chọn mẫu tre
+            </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Đấu trường tuyển chọn thanh tre mẫu
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Hãy quan sát kỹ màu sắc vỏ, độ dày thớ thịt và mật độ nước bên trong từng mẫu. Chọn gióng tre bánh tẻ đạt độ dẻo dai thích hợp nhất để làm nan quạt truyền thống.
+          </p>
+</div>
+<!-- 3 Interactive Bamboo Samples -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Sample A: Bamboo non -->
+<div class="bamboo-card cursor-pointer rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm select-none" id="sample-a" onclick="selectBamboo('A')">
+<div class="flex flex-col gap-space-sm">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Close up photography of young pale green bamboo stem cut in workshop Chàng Sơn, moist fleshy fibers high water content soft texture contemporary Vietnamese craft editorial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqB7I_WleCVtHalg_N6gd4ijxHBAK9-mEI1eqlE5bJIxcUL8w6bCPXUUW1Fh8DIBqq7arYXg3b8i9Xar_dVBNOC9uxKE9VEqZyfdBLHokv7RlWG0XbO7T6_unIC3042XlZnXFpu5KNeXKvclxaRYPkM5iJkAqfMDHaANRmylnpdEKYo4tsSixurfhLbOBEUHjwX8NslkOWkN_3uXRpnFXNsLqPj-L8Qt4lG-hUAHGx">
+<span class="absolute top-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-sm text-label-sm font-bold text-on-surface">
+                  Mẫu A
+                </span>
+<span class="absolute bottom-2 right-2 bg-surface/90 text-on-surface-variant rounded-full p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Tre non (1-2 năm)</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Thân xanh nhạt • Ngậm nước</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Thớ tre mềm, nhiều tinh bột ẩm, dễ biến dạng khi hong khô và thu hút mọt tre tấn công.
+              </p>
+</div>
+<button class="w-full mt-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1" id="btn-sample-a" type="button">
+<span>Kiểm định mẫu A</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Sample B: Tre bánh tẻ chuẩn (Optimal) -->
+<div class="bamboo-card cursor-pointer rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm relative select-none" id="sample-b" onclick="selectBamboo('B')">
+<div class="absolute -top-2.5 right-3 bg-secondary text-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+<span>Đề xuất nghệ nhân</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Golden mature bamboo culm hand planed cross section showing tight fibrous grain honey warm color Chàng Sơn fan maker studio soft golden hour lighting high detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsrRgOtIqLF3W2ypAVXjl2tKyFHqfJ9wW3d04QrooYeQthjjdjojfz6mWmS0ZoRSDRw9b4Meh2PwkwxSQNQzfUB6jSW8T9PTzKbF5Pwh4XMgms4GhdhHEowRVoi7aZAMsyZALVFHfovLdCjqKt5uEuTmkcZ6QpWR6Gr5Jc-xfr19QRbTCDM5ldV86wjq7HU4aH62eC63GL3ibThR_mEktCy-tjgpOfNrwZyhvRAGl6">
+<span class="absolute top-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-sm text-label-sm font-bold text-on-surface">
+                  Mẫu B
+                </span>
+<span class="absolute bottom-2 right-2 bg-secondary-container text-on-secondary-container rounded-full p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Tre bánh tẻ (3-4 năm)</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Vàng óng mộc • Gióng đanh</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Thớ tre đặc quánh, lượng nước tối thiểu, độ uốn dẻo tuyệt vời chịu lực mở gập hàng nghìn lần.
+              </p>
+</div>
+<button class="w-full mt-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1 shadow-sm" id="btn-sample-b" type="button">
+<span>Kiểm định mẫu B</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Sample C: Tre quá già khô giòn -->
+<div class="bamboo-card cursor-pointer rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm select-none" id="sample-c" onclick="selectBamboo('C')">
+<div class="flex flex-col gap-space-sm">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Overly aged dry bamboo stick brittle fibrous texture hairline crack dark brownish grey tone rustic Vietnamese artisan table macro photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsDRPEnD9pw5KGqtvjsJvm7z9NSVjEU35pg5iEx_5Lj3CWGyOepMzDaNPV1AvNllKUjJUAkrPz-S4qZ06iUV9YcImkmJVrM2PBIIdvNGqhE_UR1p8r28XZkOxhdMYJjBek23RpJCzUW3eXgeUtoKoWgUszSChXZofJvxYC9MKw4YV5FRMoG8_hub35jGLIZvVImuPAH6Anpj22FIgINXgJq6CsOOiqknCkmL-3rM6s">
+<span class="absolute top-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-sm text-label-sm font-bold text-on-surface">
+                  Mẫu C
+                </span>
+<span class="absolute bottom-2 right-2 bg-surface/90 text-on-surface-variant rounded-full p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">broken_image</span>
+</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Tre già cỗi (&gt;5 năm)</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nâu sẫm nứt vỏ • Giòn xơ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Vỏ bì nứt răm, liên kết sợi khô kiệt, khi chẻ mỏng hay bị tước nan và dễ gãy ngang khi uốn lượn.
+              </p>
+</div>
+<button class="w-full mt-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1" id="btn-sample-c" type="button">
+<span>Kiểm định mẫu C</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Craft Diagnostic Feedback Console -->
+<div class="bg-surface-container rounded-xl p-space-md mt-space-sm flex flex-col gap-space-xs transition-all duration-300" id="feedback-panel">
+<div class="flex items-center gap-space-xs text-primary font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-[20px]" id="feedback-icon">info</span>
+<span id="feedback-title">Gợi ý từ nghệ nhân Chàng Sơn</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface" id="feedback-desc">
+            Hãy nhấp vào một trong ba mẫu tre phía trên để nghe nghệ nhân phân tích đặc tính cấu trúc sớ sợi trước khi đưa vào khâu chẻ nan quạt.
+          </p>
+<div class="hidden pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm" id="feedback-meta">
+<span id="feedback-stat">Độ dẻo: --</span>
+<span id="feedback-recommendation">Khuyến nghị: --</span>
+</div>
+</div>
+</div>
+<!-- Tactile Fan Rib Preview Visualization -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">handyman</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Thử nghiệm uốn nan mô phỏng</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Áp lực đàn hồi 180°</span>
+</div>
+<!-- Interactive Bamboo Flex Gauge SVG -->
+<div class="w-full h-24 bg-surface-container-low rounded-lg p-space-md flex flex-col justify-center items-center relative overflow-hidden">
+<svg class="w-full h-12 text-secondary transition-all duration-500" id="flex-curve" viewBox="0 0 400 60">
+<path d="M 20 45 Q 200 45 380 45" fill="none" id="bamboo-path" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+<circle cx="20" cy="45" fill="#6f1110" r="5"></circle>
+<circle cx="380" cy="45" fill="#6f1110" r="5"></circle>
+</svg>
+<div class="w-full flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant px-space-xs mt-1">
+<span>Đầu chốt nan (Họng quạt)</span>
+<span class="font-semibold text-primary" id="flex-stress-label">Trạng thái: Tĩnh</span>
+<span>Ngọn vót thon</span>
+</div>
+</div>
+</div>
+</main>
+<!-- RIGHT COLUMN: Artisan Notes & Seal Authentication (3 Cols) -->
+<aside class="lg:col-span-3 flex flex-col gap-space-lg">
+<!-- Artisan Wisdom Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-sm border-b border-surface-container-high">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of senior Vietnamese artisan master craftsman from Chang Son village Thach That smiling warmly wearing rustic brown ao ba ba natural authentic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkpbILQtWVylvgb6y9Nu6LvLbdi-pjYUW5JhBWj67hUjrhRRcZJmCP91XqrDsvdmAGJak6fUlT9RgRjLzjpHQX8ifXUB4e_0LPuNgDhoHQee-pM9KTE2-XBNylDg_0le_5ygeiCEfALUo01Sjl9RmVW1IZduK0jcKAHCqLOW28Xf2tglPQ_Tlv6ujScERYPY8c9ziBE0e04a9ljvwnNW5CBCOCqKPSEAZv4YwnvNBx">
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Nghệ nhân Nguyễn Khắc</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Đệ nhị thế gia quạt Chàng Sơn</span>
+</div>
+</div>
+<div class="relative w-full h-40 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Artisan hands using traditional drawknife to plane smooth bamboo ribs for handmade Vietnamese paper fan in historic timber workshop atmospheric dust motes warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKYsJdynOOUR-TDAbEBvo2NdV_3YosnDhgEdLP4QF0gA2xHWX23TBSIZIzH9u6v0z2WoTrBDHIquCMEsVpYgQmj72OQkxoeK7Zq_c00GmhSTMLQNxzby6yWVAd8iM4eFM57q7q-21tUy0CGWMU342aG9UsmnlMwC4CHOEWEPlHAfo0vvjISMdnJdY8lRHrtBZgXUqVEaTXBqQ9O49RIUHNKTXYZSCwmSk6UaS8NjqM">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent flex items-end p-space-sm">
+<span class="text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">movie</span>
+              Kỹ nghệ vót nan tinh xảo
+            </span>
+</div>
+</div>
+<!-- Artisan Quote / Tip -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Bí quyết gia truyền</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            “Cây tre làm quạt sau khi đốn phải được ngâm nước bùn ao 3-4 tháng để tiêu hết đường bột chống mối mọt, rồi đem gác bếp hoặc phơi sương tạo độ dẻo tự nhiên như gân thép.”
+          </p>
+</div>
+</div>
+<!-- Action Verification Card & Chop Seal -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-on-surface">Xác nhận nguyên liệu</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Con dấu triện</span>
+</div>
+<!-- Seal Stamp Target Container -->
+<div class="relative w-full h-44 rounded-xl bg-surface-container-low flex flex-col items-center justify-center p-space-md overflow-hidden">
+<!-- Stamp Visual State (Initially Hidden) -->
+<div class="hidden transform scale-90 transition-all duration-500 ease-out flex flex-col items-center justify-center text-center" id="seal-stamp">
+<div class="w-24 h-24 rounded-full bg-primary/10 border-2 border-dashed border-primary flex items-center justify-center p-1 text-primary shadow-inner">
+<div class="w-full h-full rounded-full border border-primary flex flex-col items-center justify-center">
+<span class="font-label-sm text-[9px] uppercase tracking-widest font-bold text-primary">KÉN DI SẢN</span>
+<span class="material-symbols-outlined text-[26px] my-0.5 text-primary">approval_delegation</span>
+<span class="font-label-sm text-[8px] uppercase tracking-widest font-bold text-primary">TRẠM 1 CHỌN TRE</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary mt-2">ĐÃ ĐÓNG DẤU HỘ CHIẾU</span>
+</div>
+<!-- Empty placeholder when unstamped -->
+<div class="flex flex-col items-center text-center gap-space-xs text-on-surface-variant" id="seal-placeholder">
+<span class="material-symbols-outlined text-[36px] text-outline-variant">workspace_premium</span>
+<p class="font-body-sm text-body-sm">
+              Chọn đúng mẫu tre bánh tẻ để kích hoạt con dấu triện Trạm 1 vào hộ chiếu di sản.
+            </p>
+</div>
+</div>
+<!-- Confirm CTA Button -->
+<button class="w-full py-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 cursor-not-allowed" disabled="" id="confirm-selection-btn" onclick="stampAndProceed()" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Xác nhận &amp; Đóng dấu Trạm 1</span>
+</button>
+<!-- Forward Navigation Button (Reveals after stamping) -->
+<a class="hidden w-full py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold uppercase tracking-wider hover:bg-primary-container transition-all duration-300 flex items-center justify-center gap-2 shadow-md" data-path="station-2" href="#" id="next-station-btn">
+<span>Đến Trạm 2 – Tạo nan quạt (1/4)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Passport Hint -->
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm justify-center">
+<span class="material-symbols-outlined text-[15px]">menu_book</span>
+<span>Hộ chiếu thủ công sẽ lưu lại kỷ vật này</span>
+</div>
+</div>
+</aside>
+</div>
+<!-- Instruction Modal (Toggled via "Hướng dẫn cách làm") -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-gutter" id="guide-modal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl p-space-xl shadow-2xl flex flex-col gap-space-md relative">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface cursor-pointer" onclick="toggleGuideModal()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[28px]">menu_book</span>
+<h3 class="font-headline-sm text-headline-sm font-bold">Cẩm nang tuyển tre Chàng Sơn</h3>
+</div>
+<div class="flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+          Làng Chàng Sơn nức tiếng từ thế kỷ 19 với câu ca: <em>“Tiện đây hỏi khách tương phùng / Quạt Chàng Sơn gác lạnh lùng thế sao?”</em>. Để chiếc quạt nhẹ tay, thanh thoát mà bền qua chục năm hè, khâu chọn tre quyết định 70% chất lượng:
+        </p>
+<ul class="flex flex-col gap-2 pl-4 list-disc text-on-surface font-body-sm text-body-sm">
+<li><strong>Màu thân:</strong> Da tre bóng láng, chuyển màu vàng mật mộc mạc, không loang lổ vết đốm ẩm non.</li>
+<li><strong>Gióng tre:</strong> Phải thẳng đều, độ dài từ 40 - 55cm, hai đầu mắt tre thắt gọn không thô ráp.</li>
+<li><strong>Thịt tre:</strong> Dày dặn, sớ sợi đan cài chặt chẽ, khi gõ thân kêu vang đanh chứ không xốp xộp.</li>
+</ul>
+</div>
+<button class="w-full mt-space-sm py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container transition-colors cursor-pointer" onclick="toggleGuideModal()" type="button">
+        Đã hiểu – Tiếp tục thử thách
+      </button>
+</div>
+</div>
+<!-- Interactive JavaScript logic -->
+<script>
+    let selectedSample = null;
+    let isStationCompleted = false;
+
+    function selectBamboo(sampleId) {
+      if (isStationCompleted) return;
+      selectedSample = sampleId;
+
+      const cardA = document.getElementById('sample-a');
+      const cardB = document.getElementById('sample-b');
+      const cardC = document.getElementById('sample-c');
+      const btnA = document.getElementById('btn-sample-a');
+      const btnB = document.getElementById('btn-sample-b');
+      const btnC = document.getElementById('btn-sample-c');
+      const feedbackPanel = document.getElementById('feedback-panel');
+      const feedbackTitle = document.getElementById('feedback-title');
+      const feedbackDesc = document.getElementById('feedback-desc');
+      const feedbackIcon = document.getElementById('feedback-icon');
+      const feedbackMeta = document.getElementById('feedback-meta');
+      const feedbackStat = document.getElementById('feedback-stat');
+      const feedbackRec = document.getElementById('feedback-recommendation');
+      const confirmBtn = document.getElementById('confirm-selection-btn');
+      const bambooPath = document.getElementById('bamboo-path');
+      const flexLabel = document.getElementById('flex-stress-label');
+      const arenaStatus = document.getElementById('arena-status');
+      const stepBadge = document.getElementById('step-badge-counter');
+      const stepIcon2 = document.getElementById('step-icon-2');
+
+      // Reset card highlights
+      [cardA, cardB, cardC].forEach(c => {
+        c.classList.remove('ring-2', 'ring-primary', 'ring-secondary', 'ring-outline', 'bg-surface-container-high', 'scale-[1.02]');
+      });
+      [btnA, btnB, btnC].forEach(b => {
+        b.className = "w-full mt-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1";
+      });
+
+      feedbackMeta.classList.remove('hidden');
+      stepBadge.innerText = "Bước 2/3";
+      stepIcon2.classList.remove('bg-surface-container-high', 'text-on-surface');
+      stepIcon2.classList.add('bg-primary', 'text-on-primary');
+
+      if (sampleId === 'A') {
+        cardA.classList.add('ring-2', 'ring-outline', 'bg-surface-container-high');
+        btnA.className = "w-full mt-space-md py-2 rounded-lg bg-outline text-white font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1";
+        feedbackTitle.innerText = "Mẫu A: Tre non - Chưa đủ tiêu chuẩn";
+        feedbackDesc.innerText = "Thân tre non còn quá nhiều nước và tinh bột hữu cơ. Khi phơi khô nan sẽ bị ngót, co rút vặn xoắn và mối mọt dễ dàng đục rỗng sau vài tuần sử dụng.";
+        feedbackIcon.innerText = "cancel";
+        feedbackIcon.className = "material-symbols-outlined text-[20px] text-error";
+        feedbackStat.innerText = "Độ dẻo: Mềm nhũn (Dễ gập gãy)";
+        feedbackRec.innerText = "Khuyến nghị: Không dùng";
+        
+        // Svg curve flex
+        bambooPath.setAttribute('d', 'M 20 45 Q 200 65 380 45');
+        bambooPath.setAttribute('stroke', '#ba1a1a');
+        flexLabel.innerText = "Trạng thái: Trùng võng, mất phom";
+        flexLabel.className = "font-semibold text-error";
+
+        arenaStatus.innerText = "Chưa đạt tiêu chuẩn";
+        arenaStatus.className = "font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold";
+
+        confirmBtn.disabled = true;
+        confirmBtn.className = "w-full py-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 cursor-not-allowed";
+      } 
+      else if (sampleId === 'B') {
+        cardB.classList.add('ring-2', 'ring-secondary', 'bg-surface-container-high', 'scale-[1.02]');
+        btnB.className = "w-full mt-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1 shadow-sm";
+        feedbackTitle.innerText = "Mẫu B: Tuyệt hảo! Tre bánh tẻ già vừa độ";
+        feedbackDesc.innerText = "Chính xác! Nghệ nhân Chàng Sơn luôn chọn tre từ 3 đến 4 năm tuổi. Thân tre đanh chắc, mật độ thớ thịt mịn đồng đều, không cong vênh và độ đàn hồi đạt mức tối ưu cho nan quạt.";
+        feedbackIcon.innerText = "verified";
+        feedbackIcon.className = "material-symbols-outlined text-[20px] text-secondary";
+        feedbackStat.innerText = "Độ dẻo: Thượng hạng (>10.000 lần mở gập)";
+        feedbackRec.innerText = "Khuyến nghị: Đạt chuẩn tuyệt đối";
+
+        // Svg curve flex: Perfect spring curve
+        bambooPath.setAttribute('d', 'M 20 45 Q 200 15 380 45');
+        bambooPath.setAttribute('stroke', '#7d5714');
+        flexLabel.innerText = "Trạng thái: Đàn hồi cánh cung hoàn mỹ";
+        flexLabel.className = "font-semibold text-secondary";
+
+        arenaStatus.innerText = "Mẫu tre thượng hạng";
+        arenaStatus.className = "font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold";
+
+        // Enable confirm button
+        confirmBtn.disabled = false;
+        confirmBtn.className = "w-full py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold uppercase tracking-wider hover:bg-primary-container transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-md";
+      } 
+      else if (sampleId === 'C') {
+        cardC.classList.add('ring-2', 'ring-outline', 'bg-surface-container-high');
+        btnC.className = "w-full mt-space-md py-2 rounded-lg bg-outline text-white font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1";
+        feedbackTitle.innerText = "Mẫu C: Tre già khô - Quá giòn";
+        feedbackDesc.innerText = "Cây tre già quá tuổi đã hóa gỗ thô ráp, mất đi chất keo thực vật dẻo dai. Khi nghệ nhân dùng dao chuốt mỏng nan xỏ, nan sẽ nứt dọc thớ và gãy đôi khi chịu gió mạnh.";
+        feedbackIcon.innerText = "warning";
+        feedbackIcon.className = "material-symbols-outlined text-[20px] text-error";
+        feedbackStat.innerText = "Độ dẻo: Giòn gãy (Kém đàn hồi)";
+        feedbackRec.innerText = "Khuyến nghị: Không dùng làm nan";
+
+        // Svg curve flex: Sharp brittle crack look
+        bambooPath.setAttribute('d', 'M 20 45 L 195 25 L 205 32 L 380 45');
+        bambooPath.setAttribute('stroke', '#ba1a1a');
+        flexLabel.innerText = "Trạng thái: Dễ gãy giòn khi uốn cong";
+        flexLabel.className = "font-semibold text-error";
+
+        arenaStatus.innerText = "Chưa đạt tiêu chuẩn";
+        arenaStatus.className = "font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold";
+
+        confirmBtn.disabled = true;
+        confirmBtn.className = "w-full py-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 cursor-not-allowed";
+      }
+    }
+
+    function stampAndProceed() {
+      if (selectedSample !== 'B') return;
+      isStationCompleted = true;
+
+      // Visual Seal Stamp Animation
+      const placeholder = document.getElementById('seal-placeholder');
+      const stamp = document.getElementById('seal-stamp');
+      const confirmBtn = document.getElementById('confirm-selection-btn');
+      const nextBtn = document.getElementById('next-station-btn');
+      const stepIcon3 = document.getElementById('step-icon-3');
+      const stepBadge = document.getElementById('step-badge-counter');
+
+      placeholder.classList.add('hidden');
+      stamp.classList.remove('hidden');
+      
+      // Stamp impact scale effect
+      setTimeout(() => {
+        stamp.classList.remove('scale-90');
+        stamp.classList.add('scale-100');
+      }, 50);
+
+      // Complete Steps in sidebar
+      stepBadge.innerText = "Bước 3/3";
+      stepIcon3.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      stepIcon3.classList.add('bg-primary', 'text-on-primary');
+
+      // Swap confirmation button for next station CTA
+      confirmBtn.classList.add('hidden');
+      nextBtn.classList.remove('hidden');
+
+      // Update Feedback summary
+      document.getElementById('feedback-title').innerText = "Trạm 1: Chọn Tre đã hoàn thành xuất sắc!";
+      document.getElementById('feedback-desc').innerText = "Nguyên liệu tre bánh tẻ Chàng Sơn của bạn đã được kiểm duyệt thành công và đóng dấu xác thực vào Hộ chiếu di sản. Sẵn sàng chuyển tiếp tới Trạm 2: Tạo Nan Quạt!";
+      document.getElementById('arena-status').innerText = "Đã xác nhận đạt chuẩn 100%";
+      document.getElementById('arena-status').className = "font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-primary text-on-primary font-bold";
+    }
+
+    function toggleGuideModal() {
+      const modal = document.getElementById('guide-modal');
+      modal.classList.toggle('hidden');
+    }
+
+    document.getElementById('guide-modal-btn').addEventListener('click', toggleGuideModal);
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl shadow-[0_-1px_12px_rgba(48,39,32,0.03)]"><div class="max-w-[1280px] mx-auto px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="md:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="KÉN Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrD_TUkeTZh86S1o5VW8J1k5Gkh_jTKBOrYfF9c0HdxhlALttbpRL96RKRq8msH0Yuq7CyrSoJ00VoM3wvkgVR5qstmz-Kf0xYb1hVta_FL2lFo_AT12JqqnNV4o-s0P-ED1eoz72kxU8DoQSC4pyXaPPtgJqUjR02eEaJRkQZlXb7KVQdSx97Q-nNZSa0fgoh3mWYst-TgQe2_9dG06KXbmRqE2yiTKxnAuZc1MY_aA"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-wide">KÉN</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Kén - Kết tinh từ văn hóa Việt, gửi trao niềm tự hào. Trải nghiệm số hóa nghề làm quạt truyền thống Chàng Sơn, nâng tầm di sản dân tộc qua góc nhìn đương đại.</p><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary bg-surface-container px-space-md py-1.5 rounded-lg w-fit"><span class="material-symbols-outlined text-[16px]">verified</span><span>Di sản làng nghề Chàng Sơn, Thạch Thất, Hà Nội</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md font-bold text-on-surface mb-space-xs">Hành trình KÉN</h4><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Kể chuyện văn hóa</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="map" href="#">Bản đồ làng quạt ảo</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="station-1" href="#">4 Trạm chế tác thủ công</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="passport" href="#">Hộ chiếu &amp; Workshop</a></nav></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md font-bold text-on-surface mb-space-xs">Kết nối di sản</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Cộng đồng yêu quạt thủ công &amp; sản phẩm văn hóa Việt sáng tạo.</p><a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-semibold hover:text-tertiary transition-colors" href="https://linktr.ee/ken.quatangviet" rel="noopener noreferrer" target="_blank"><span>linktr.ee/ken.quatangviet</span><span class="material-symbols-outlined text-[16px]">arrow_outward</span></a><div class="flex items-center gap-space-sm mt-space-xs"><span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">share</span></span><span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">mail</span></span><span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">public</span></span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-high/30 px-space-lg py-space-md rounded-lg"><p class="font-label-sm text-label-sm text-on-surface-variant">© 2026 KÉN - Quà Tặng Việt. Mọi quyền được bảo lưu.</p><p class="font-label-sm text-label-sm text-on-surface-variant">Bảo tồn &amp; Phát huy Di sản Làng nghề Chàng Sơn</p></div></div></footer>
+
+</body></html>

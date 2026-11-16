@@ -1,0 +1,756 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#78520f",
+          "surface": "#fff8f5",
+          "surface-container-high": "#f6e5da",
+          "primary-fixed": "#ffdad6",
+          "inverse-primary": "#ffb4ab",
+          "surface-container-lowest": "#ffffff",
+          "outline-variant": "#dec0bc",
+          "primary-fixed-dim": "#ffb4ab",
+          "primary-container": "#8f2924",
+          "on-background": "#221a13",
+          "surface-container-low": "#fff1e8",
+          "inverse-surface": "#382f27",
+          "surface-tint": "#a53933",
+          "tertiary-fixed-dim": "#ffb3ad",
+          "secondary-container": "#fdc97c",
+          "on-tertiary-fixed-variant": "#7f2926",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#ffddb0",
+          "on-secondary-fixed-variant": "#614000",
+          "error-container": "#ffdad6",
+          "tertiary-container": "#88302c",
+          "surface-dim": "#e7d7cc",
+          "on-tertiary-container": "#ffa9a1",
+          "background": "#fff8f5",
+          "on-primary-fixed-variant": "#85221e",
+          "on-tertiary-fixed": "#410003",
+          "outline": "#8a716e",
+          "secondary-fixed-dim": "#f1be72",
+          "on-primary-container": "#ffa9a0",
+          "on-surface": "#221a13",
+          "on-surface-variant": "#57423f",
+          "on-secondary-fixed": "#291800",
+          "surface-container": "#fcebe0",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#ffdad6",
+          "error": "#ba1a1a",
+          "inverse-on-surface": "#ffeee2",
+          "tertiary": "#6a1918",
+          "on-primary-fixed": "#410002",
+          "surface-container-highest": "#f0dfd4",
+          "on-primary": "#ffffff",
+          "on-error-container": "#93000a",
+          "surface-variant": "#f0dfd4",
+          "primary": "#6f1110",
+          "secondary": "#7d5714",
+          "surface-bright": "#fff8f5"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "gutter-desktop": "2rem",
+          "margin-desktop": "5rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin": "1.25rem",
+          "space-md": "1rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "title-lg": [
+            "Be Vietnam Pro"
+          ],
+          "display-xl-mobile": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Be Vietnam Pro"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Be Vietnam Pro"
+          ],
+          "body-md": [
+            "Be Vietnam Pro"
+          ],
+          "label-lg": [
+            "Be Vietnam Pro"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "headline-md-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Be Vietnam Pro"
+          ],
+          "title-md": [
+            "Be Vietnam Pro"
+          ],
+          "display-xl": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Be Vietnam Pro"
+          ]
+        },
+        "fontSize": {
+          "title-lg": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-xl-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "52px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-xl": [
+            "56px",
+            {
+              "lineHeight": "68px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(48,39,32,0.06)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="KÉN Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrD_TUkeTZh86S1o5VW8J1k5Gkh_jTKBOrYfF9c0HdxhlALttbpRL96RKRq8msH0Yuq7CyrSoJ00VoM3wvkgVR5qstmz-Kf0xYb1hVta_FL2lFo_AT12JqqnNV4o-s0P-ED1eoz72kxU8DoQSC4pyXaPPtgJqUjR02eEaJRkQZlXb7KVQdSx97Q-nNZSa0fgoh3mWYst-TgQe2_9dG06KXbmRqE2yiTKxnAuZc1MY_aA"></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-full shadow-[0_1px_4px_rgba(48,39,32,0.04)]" data-active-classes="bg-primary text-on-primary font-bold rounded-lg shadow-sm"><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Làng nghề</a><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary text-on-primary font-bold rounded-lg shadow-sm" data-path="map" href="#">Bản đồ ảo</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="station-1" href="#">Trạm 1: Tre</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="station-2" href="#">Trạm 2: Nan</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="station-3" href="#">Trạm 3: Dán</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="station-4" href="#">Trạm 4: Hoàn thiện</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="passport" href="#">Hộ chiếu</a></nav><div class="flex items-center gap-space-md"><div class="inline-flex items-center bg-surface-container-low p-0.5 rounded-full"><button class="px-2 py-1 font-label-sm text-label-sm font-semibold rounded-full bg-surface-container-lowest text-primary shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button">VI</button><button class="px-2 py-1 font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">EN</button></div><button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Trợ giúp trải nghiệm" type="button"><span class="material-symbols-outlined text-[18px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Interactive Virtual Craft Village Showcase Screen -->
+<div class="max-w-[1360px] mx-auto w-full px-4 lg:px-6 py-6 flex flex-col gap-6">
+<!-- Top Sub-Header & Step Indicator -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-surface-container-low px-6 py-4 rounded-xl shadow-sm">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-on-primary font-bold text-label-md">2</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Khám phá tương tác 3D • KÉN Interactive</span>
+<h1 class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Step 2 — Bản Đồ Làng Quạt Ảo Chàng Sơn</h1>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Chế độ: Tự do khám phá làng</span>
+</span>
+<button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high hover:bg-secondary-container hover:text-on-secondary-container text-on-surface font-label-sm text-label-sm transition-colors" id="audio-toggle-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+<span id="audio-label">Âm thanh làng nghề: Bật</span>
+</button>
+</div>
+</div>
+<!-- Main Content: Map Area (~65-68%) + Mission Sidebar (~32-35%) Balanced Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 items-start">
+<!-- Left Column: Virtual Village Map Viewport + Rich Exploration Features (Col 1-8 / ~67%) -->
+<div class="xl:col-span-8 flex flex-col gap-5">
+<div class="relative w-full aspect-[16/10] sm:aspect-[16/9] lg:aspect-[16/9.2] rounded-xl overflow-hidden bg-surface-container shadow-md group select-none">
+<!-- Illustrated Village Background Layer -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out transform group-hover:scale-[1.01]" data-alt="A richly illustrated vibrant panoramic Vietnamese craft village of Chàng Sơn in Thạch Thất Hanoi, featuring traditional curved terracotta tile roofs, mossy communal village gate, three-bay wooden houses, red silk paper fans drying in bamboo racks under warm golden afternoon sunlight, winding terracotta brick paths, blooming lotus pond with pink lotuses, lush ancient banyan tree, red lanterns, miniature isometric 3D stylization inspired by modern craft adventure games with warm lacquer red and bamboo gold tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCA5QnjZQuqLHqobuc7zUQbVPUYOIjFfA6TQae5MfTYYLxdVMEAtbtpqQ1fQ51PLm7NIx0llbJqTXXWN0XpmOoQTEOgMar-huxgW_bHpc72s7_mW2V4vTeagEUBP4NKZyGOc0A8c0NSll8yKh0r3LCSvYESBRNw_MWjSVMSWfX3t9kcz48ShH9g4clZ8bmYtJud-fVyp40lFWw9rjmlGPIY_xyfeUTf8L-JpnfD88jb')">
+<!-- Atmospheric Warm Sun Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-surface/20 pointer-events-none"></div>
+</div>
+<!-- Decorative Village Seal Watermark -->
+<div class="absolute top-4 left-4 z-10 flex items-center gap-2 bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">temple_buddhist</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[13px] leading-tight font-bold text-primary">Làng Nghề Quạt Chàng Sơn</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Không gian thực tế ảo 360°</span>
+</div>
+</div>
+<!-- Interactive Hotspot Pins Overlaid on the Village Map -->
+<!-- HOTSPOT 1: Chọn Tre (Active / Unlocked) -->
+<div class="absolute top-[56%] left-[18%] sm:left-[20%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center cursor-pointer group/pin" onclick="selectStation(1)">
+<!-- Pulsing Radar Glow -->
+<div class="absolute -top-3 w-16 h-16 rounded-full bg-secondary-container/40 animate-ping pointer-events-none"></div>
+<!-- Pin Badge -->
+<div class="relative flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-lg ring-2 ring-secondary-container transition-transform duration-200 group-hover/pin:scale-105">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary font-bold text-[11px]">1</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-bold text-primary leading-none">Chọn tre</span>
+<span class="font-label-sm text-[10px] text-secondary font-semibold">Đang mở • Vào trạm</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[16px] animate-bounce">arrow_downward</span>
+</div>
+<!-- Pin Stalk Indicator -->
+<div class="w-1.5 h-6 bg-secondary rounded-full shadow-sm -mt-0.5"></div>
+<div class="w-3 h-1.5 bg-on-background/40 rounded-full blur-[1px]"></div>
+</div>
+<!-- HOTSPOT 2: Tạo Nan Quạt (Next in Queue) -->
+<div class="absolute top-[32%] left-[45%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center cursor-pointer group/pin" onclick="selectStation(2)">
+<div class="relative flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm shadow-md transition-transform duration-200 group-hover/pin:scale-105">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-[11px]">2</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-bold text-on-surface leading-none">Tạo nan quạt</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Trạm tiếp theo</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">lock_clock</span>
+</div>
+<div class="w-1.5 h-6 bg-outline-variant rounded-full shadow-sm -mt-0.5"></div>
+<div class="w-3 h-1.5 bg-on-background/30 rounded-full blur-[1px]"></div>
+</div>
+<!-- HOTSPOT 3: Dán Mặt Quạt (Locked) -->
+<div class="absolute top-[42%] left-[68%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center cursor-pointer group/pin" onclick="selectStation(3)">
+<div class="relative flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high/90 backdrop-blur-sm shadow-md opacity-85 hover:opacity-100 transition-opacity">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-dim text-on-surface-variant font-bold text-[11px]">3</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant leading-none">Dán mặt quạt</span>
+<span class="font-label-sm text-[10px] text-outline">Chưa mở</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">lock</span>
+</div>
+<div class="w-1.5 h-6 bg-outline-variant/60 rounded-full shadow-sm -mt-0.5"></div>
+<div class="w-3 h-1.5 bg-on-background/30 rounded-full blur-[1px]"></div>
+</div>
+<!-- HOTSPOT 4: Hoàn Thiện (Locked) -->
+<div class="absolute top-[64%] left-[84%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center cursor-pointer group/pin" onclick="selectStation(4)">
+<div class="relative flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high/90 backdrop-blur-sm shadow-md opacity-85 hover:opacity-100 transition-opacity">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-dim text-on-surface-variant font-bold text-[11px]">4</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant leading-none">Hoàn thiện</span>
+<span class="font-label-sm text-[10px] text-outline">Chưa mở</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">lock</span>
+</div>
+<div class="w-1.5 h-6 bg-outline-variant/60 rounded-full shadow-sm -mt-0.5"></div>
+<div class="w-3 h-1.5 bg-on-background/30 rounded-full blur-[1px]"></div>
+</div>
+<!-- Digital Character Avatar Navigating Village -->
+<div class="absolute top-[68%] left-[32%] -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none transition-all duration-700 ease-out flex flex-col items-center" id="traveler-avatar">
+<span class="px-2 py-0.5 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface rounded font-label-sm text-[9px] mb-1">Du khách (Bạn)</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest p-0.5 shadow-xl ring-2 ring-primary flex items-center justify-center animate-bounce">
+<span class="material-symbols-outlined text-primary text-[24px]">hiking</span>
+</div>
+<div class="w-6 h-2 bg-inverse-surface/40 rounded-full blur-[2px] mt-1"></div>
+</div>
+<!-- In-Map Quick Controls & View Mode -->
+<div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md p-1 rounded-lg shadow-sm">
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Thu phóng" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Thu nhỏ" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_out</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Toàn màn hình" type="button">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+<!-- Navigation Guidance Bar (Bottom Map Bar) -->
+<div class="absolute bottom-3 left-3 right-3 z-10 bg-surface/95 backdrop-blur-md px-4 py-2.5 rounded-lg shadow-md flex flex-wrap items-center justify-between gap-3 text-on-surface">
+<div class="flex items-center gap-3">
+<div class="hidden sm:flex items-center justify-center w-7 h-7 rounded-md bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">Điều khiển di chuyển trong làng:</span>
+</div>
+<!-- Controls Scheme -->
+<div class="flex items-center gap-4">
+<!-- Desktop Keyboard Keys -->
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bàn phím:</span>
+<div class="flex items-center gap-0.5">
+<kbd class="px-1.5 py-0.5 bg-surface-container-highest rounded text-[11px] font-mono font-bold text-on-surface shadow-xs">W</kbd>
+<kbd class="px-1.5 py-0.5 bg-surface-container-highest rounded text-[11px] font-mono font-bold text-on-surface shadow-xs">A</kbd>
+<kbd class="px-1.5 py-0.5 bg-surface-container-highest rounded text-[11px] font-mono font-bold text-on-surface shadow-xs">S</kbd>
+<kbd class="px-1.5 py-0.5 bg-surface-container-highest rounded text-[11px] font-mono font-bold text-on-surface shadow-xs">D</kbd>
+</div>
+</div>
+<!-- Mouse / Drag Angle -->
+<div class="hidden md:flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">mouse</span>
+<span>Rê chuột để nhìn quanh</span>
+</div>
+<!-- Mobile Joystick Cue -->
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">gamepad</span>
+<span>Joystick cảm ứng</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Village Landmark Tags (4 Quick Anchor Cards) -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-secondary transition-all shadow-xs cursor-pointer group" onclick="switchSpaceTab('gate')">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors shrink-0">
+<span class="material-symbols-outlined text-[20px]">door_back</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">Cổng Làng Cổ</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Kiến trúc thế kỷ XIX</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary transition-all shadow-xs cursor-pointer group" onclick="switchSpaceTab('pond')">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors shrink-0">
+<span class="material-symbols-outlined text-[20px]">yard</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">Ao Sen Đình Làng</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Hương thơm mộc mạc</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-secondary transition-all shadow-xs cursor-pointer group" onclick="switchSpaceTab('workshop')">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors shrink-0">
+<span class="material-symbols-outlined text-[20px]">carpenter</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">Xưởng Vót Tre</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Tre ngâm 3-6 tháng</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary transition-all shadow-xs cursor-pointer group" onclick="switchSpaceTab('paper')">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors shrink-0">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">Sân Phơi Giấy Dó</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Nhựa cậy &amp; điệp son</span>
+</div>
+</div>
+</div>
+<!-- Rich Narrative Block: Dấu Ấn Không Gian Xứ Đoài & Lộ Trình Gợi Ý (Balances height seamlessly with right sidebar) -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/40 shadow-sm flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-outline-variant/30 pb-3">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-md bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Dấu Ấn Không Gian Xứ Đoài • Chàng Sơn</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Khám phá văn hóa bản địa song hành cùng từng bước chân chế tác</p>
+</div>
+</div>
+<!-- Interactive Narrative Tabs -->
+<div class="inline-flex items-center bg-surface-container p-1 rounded-lg gap-1">
+<button class="space-tab-btn px-3 py-1 rounded text-label-sm font-semibold transition-all bg-surface-container-lowest text-primary shadow-xs" data-target="gate" onclick="switchSpaceTab('gate')">Cổng Làng</button>
+<button class="space-tab-btn px-3 py-1 rounded text-label-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface" data-target="pond" onclick="switchSpaceTab('pond')">Ao Sen</button>
+<button class="space-tab-btn px-3 py-1 rounded text-label-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface" data-target="workshop" onclick="switchSpaceTab('workshop')">Xưởng Gỗ &amp; Nan</button>
+<button class="space-tab-btn px-3 py-1 rounded text-label-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface" data-target="guide" onclick="switchSpaceTab('guide')">Mẹo 360°</button>
+</div>
+</div>
+<!-- Tab Dynamic Story Card -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center" id="space-tab-content">
+<div class="md:col-span-8 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-[10px] font-bold uppercase tracking-wider" id="space-tag">Di tích thế kỷ XIX</span>
+<span class="text-on-surface-variant text-[12px] flex items-center gap-1 font-body-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">headphones</span>
+<span id="space-audio-time">Audio thuyết minh 1:45</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-[18px] text-on-surface font-bold leading-snug" id="space-title">Cổng Làng Cổ &amp; Đường Lát Gạch Nghiêng Rêu Phong</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="space-description">
+                Được dựng bằng đá ong và gạch nung cổ kính, cổng làng Chàng Sơn là điểm dừng chân đầu tiên che chở cho hàng trăm thế hệ nghệ nhân mộc và quạt lụa. Con đường gạch nghiêng đặc trưng giúp thoát nước mưa nhanh chóng, tạo không gian khô ráo cho những nong tre phơi nắng.
+              </p>
+<div class="flex flex-wrap items-center gap-3 pt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] text-primary font-semibold">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+                Tọa độ khám phá 3D mở
+              </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">explore</span>
+                Cách Trạm 1: 50m đi bộ ảo
+              </span>
+</div>
+</div>
+<div class="md:col-span-4 h-32 md:h-28 rounded-lg overflow-hidden bg-surface-container relative group">
+<img alt="Cổng làng cổ Chàng Sơn" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" id="space-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA5QnjZQuqLHqobuc7zUQbVPUYOIjFfA6TQae5MfTYYLxdVMEAtbtpqQ1fQ51PLm7NIx0llbJqTXXWN0XpmOoQTEOgMar-huxgW_bHpc72s7_mW2V4vTeagEUBP4NKZyGOc0A8c0NSll8yKh0r3LCSvYESBRNw_MWjSVMSWfX3t9kcz48ShH9g4clZ8bmYtJud-fVyp40lFWw9rjmlGPIY_xyfeUTf8L-JpnfD88jb">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/70 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-inverse-on-surface font-label-sm text-[11px] font-medium" id="space-caption">Khuôn viên Cổng làng</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Mission Progress & Station Detail Sidebar (~33%) -->
+<div class="xl:col-span-4 flex flex-col gap-5">
+<!-- Journey Progress Card -->
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">route</span>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Hành Trình Của Bạn</h2>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">0 / 4 Trạm</span>
+</div>
+<!-- Fan-inspired Dual Color Progress Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-gradient-to-r from-primary to-secondary transition-all duration-500 rounded-full" style="width: 10%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Bắt đầu từ Trạm 1</span>
+<span>Chưa hoàn thành</span>
+</div>
+</div>
+<!-- Mission Checklist Accordion List -->
+<div class="flex flex-col gap-2.5">
+<!-- Task 1 (Active) -->
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm flex items-start gap-3 cursor-pointer group hover:bg-surface-container transition-colors" onclick="selectStation(1)">
+<div class="mt-0.5 flex items-center justify-center w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[15px]">radio_button_unchecked</span>
+</div>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-primary group-hover:underline">Trạm 1: Chọn Tre</span>
+<span class="font-label-sm text-[11px] text-secondary font-semibold">Đang mở</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tuyển chọn gióng tre bánh tẻ dẻo dai từ rừng nứa xứ Đoài.</p>
+</div>
+</div>
+<!-- Task 2 (Pending) -->
+<div class="p-3 rounded-lg bg-surface-container/60 opacity-80 flex items-start gap-3 cursor-pointer hover:opacity-100 transition-opacity" onclick="selectStation(2)">
+<div class="mt-0.5 flex items-center justify-center w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">lock_clock</span>
+</div>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Trạm 2: Tạo Nan Quạt</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Chờ mở khóa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Kỹ thuật chẻ nan mỏng đều và uốn nhiệt dáng bán nguyệt.</p>
+</div>
+</div>
+<!-- Task 3 (Locked) -->
+<div class="p-3 rounded-lg bg-surface-container/40 opacity-60 flex items-start gap-3">
+<div class="mt-0.5 flex items-center justify-center w-5 h-5 rounded-full bg-surface-container-high text-outline">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+</div>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface-variant">Trạm 3: Dán Mặt Quạt</span>
+<span class="font-label-sm text-[11px] text-outline">Đã khóa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Phết nhựa cậy bí truyền lên giấy điệp thủ công.</p>
+</div>
+</div>
+<!-- Task 4 (Locked) -->
+<div class="p-3 rounded-lg bg-surface-container/40 opacity-60 flex items-start gap-3">
+<div class="mt-0.5 flex items-center justify-center w-5 h-5 rounded-full bg-surface-container-high text-outline">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+</div>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface-variant">Trạm 4: Hoàn Thiện</span>
+<span class="font-label-sm text-[11px] text-outline">Đã khóa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Xâu nhôm tán đinh đầu quạt &amp; đóng triện bảo chứng di sản.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Station Detail Preview Panel (Dynamic based on selected station) -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3.5 transition-all border border-outline-variant/30" id="station-detail-card">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Trạm Hiện Tại</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+<span class="font-label-sm text-label-sm font-semibold">+25 Điểm di sản</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold" id="station-detail-title">Trạm 1: Nghệ Thuật Chọn Tre</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="station-detail-desc">
+              Khởi đầu linh hồn chiếc quạt Chàng Sơn nằm ở chất tre nứa xứ Đoài. Tre phải tròn lóng, không sâu mọt, được ngâm bùn ao đủ tháng để chống mối mọt tự nhiên không hóa chất.
+            </p>
+</div>
+<!-- Mini Station Artifact Snapshot -->
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up shot of Vietnamese craft artisan hands carefully selecting thick smooth green bamboo culms in Chang Son craft village, warm golden indoor workshop lighting with traditional tools, plane knives, and raw bamboo strips, warm nostalgic editorial feel." id="station-detail-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD3mgwBTiGYN79AQyDxRp3i-Uduc1UlntsBeoh7HZPc8cMa3-UprRVESZWcSjXwbG2TPPu-uUv5xrE-wYU4NSrldkxBxYX0jpu6i_mSAfcbhwFTO6x_-NB9J6ZLSOrwKgtPINDM71ruKYGZap8BewWv72udi3Ykq53VOO-hKG1YWeVe23Mp-Butx80_f-q-hSU8oZhul6NiGELDS9y3cq5LHmeAZU7tvKdbQZCUS-i">
+<div class="absolute bottom-2 left-2 px-2 py-0.5 bg-inverse-surface/80 text-inverse-on-surface rounded font-label-sm text-[11px] backdrop-blur-xs">
+              Nghệ nhân Chàng Sơn hướng dẫn
+            </div>
+</div>
+<!-- Enter Station CTA Button -->
+<a class="w-full flex items-center justify-center gap-2 py-3 px-5 rounded bg-primary hover:bg-tertiary active:scale-[0.99] text-on-primary font-label-lg text-label-lg font-bold tracking-wide shadow-sm transition-all text-center" data-path="station-1" href="#" id="station-detail-cta">
+<span>Bước vào Trạm 1 – Chọn tre</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+<!-- Incentive & Reward Motivation Banner -->
+<div class="p-4 rounded-xl bg-gradient-to-br from-surface-container-high to-surface-container-low border border-outline-variant/30 shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[26px] mt-0.5">workspace_premium</span>
+<div class="flex flex-col">
+<span class="font-title-md text-[14px] leading-tight font-bold text-on-surface">Đặc quyền Hộ Chiếu KÉN</span>
+<p class="font-body-sm text-[12px] leading-relaxed text-on-surface-variant mt-1">
+              Hoàn thành cả 4 công đoạn để nhận huy hiệu số chứng nhận di sản, mã voucher giảm giá 10% và cơ hội nhận vé tham gia Workshop thủ công trực tiếp tại làng nghề.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Audio toggle simulation
+    const audioBtn = document.getElementById('audio-toggle-btn');
+    const audioLabel = document.getElementById('audio-label');
+    let isAudioOn = true;
+
+    if (audioBtn) {
+      audioBtn.addEventListener('click', () => {
+        isAudioOn = !isAudioOn;
+        if (isAudioOn) {
+          audioLabel.textContent = 'Âm thanh làng nghề: Bật';
+          audioBtn.querySelector('.material-symbols-outlined').textContent = 'volume_up';
+        } else {
+          audioLabel.textContent = 'Âm thanh làng nghề: Tắt';
+          audioBtn.querySelector('.material-symbols-outlined').textContent = 'volume_off';
+        }
+      });
+    }
+
+    // Space Information Tabs switcher
+    const spaceData = {
+      gate: {
+        tag: 'Di tích thế kỷ XIX',
+        audioTime: 'Audio thuyết minh 1:45',
+        title: 'Cổng Làng Cổ & Đường Lát Gạch Nghiêng Rêu Phong',
+        desc: 'Được dựng bằng đá ong và gạch nung cổ kính, cổng làng Chàng Sơn là điểm dừng chân đầu tiên che chở cho hàng trăm thế hệ nghệ nhân mộc và quạt lụa. Con đường gạch nghiêng đặc trưng giúp thoát nước mưa nhanh chóng, tạo không gian khô ráo cho những nong tre phơi nắng.',
+        caption: 'Khuôn viên Cổng làng',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCA5QnjZQuqLHqobuc7zUQbVPUYOIjFfA6TQae5MfTYYLxdVMEAtbtpqQ1fQ51PLm7NIx0llbJqTXXWN0XpmOoQTEOgMar-huxgW_bHpc72s7_mW2V4vTeagEUBP4NKZyGOc0A8c0NSll8yKh0r3LCSvYESBRNw_MWjSVMSWfX3t9kcz48ShH9g4clZ8bmYtJud-fVyp40lFWw9rjmlGPIY_xyfeUTf8L-JpnfD88jb'
+      },
+      pond: {
+        tag: 'Cảnh quan biểu tượng',
+        audioTime: 'Audio thuyết minh 2:10',
+        title: 'Ao Sen Đình Làng & Không Gian Tĩnh Tại',
+        desc: 'Mặt nước ao sen phẳng lặng trước đình làng là linh hồn điều hòa sinh khí. Nơi đây xưa kia là tụ điểm họp chợ nan quạt phiên sáng sớm, nơi người thợ mang những gióng tre ngâm đủ ngày lên thử độ dẻo và ngắm nhìn sắc hồng hoa sen tương phản với màu tre mộc mạc.',
+        caption: 'Ao Sen Đình Chàng Sơn',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCA5QnjZQuqLHqobuc7zUQbVPUYOIjFfA6TQae5MfTYYLxdVMEAtbtpqQ1fQ51PLm7NIx0llbJqTXXWN0XpmOoQTEOgMar-huxgW_bHpc72s7_mW2V4vTeagEUBP4NKZyGOc0A8c0NSll8yKh0r3LCSvYESBRNw_MWjSVMSWfX3t9kcz48ShH9g4clZ8bmYtJud-fVyp40lFWw9rjmlGPIY_xyfeUTf8L-JpnfD88jb'
+      },
+      workshop: {
+        tag: 'Không gian sáng tạo',
+        audioTime: 'Audio thuyết minh 3:00',
+        title: 'Xưởng Vót Tre & Điêu Khắc Nan Quạt Tinh Xảo',
+        desc: 'Tiếng dao cau lách cách vót từng nan tre mỏng tang, thơm mùi mùn cưa và tre nứa mới. Mỗi gian nhà ba gian truyền thống đều là một xưởng nhỏ, nơi bàn tay nghệ nhân thoăn thoắt gọt giũa độ dày từng nan quạt sao cho khi xòe ra nhẹ như làn gió thoảng.',
+        caption: 'Xưởng thủ công truyền thống',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCD3mgwBTiGYN79AQyDxRp3i-Uduc1UlntsBeoh7HZPc8cMa3-UprRVESZWcSjXwbG2TPPu-uUv5xrE-wYU4NSrldkxBxYX0jpu6i_mSAfcbhwFTO6x_-NB9J6ZLSOrwKgtPINDM71ruKYGZap8BewWv72udi3Ykq53VOO-hKG1YWeVe23Mp-Butx80_f-q-hSU8oZhul6NiGELDS9y3cq5LHmeAZU7tvKdbQZCUS-i'
+      },
+      paper: {
+        tag: 'Kỹ nghệ cổ truyền',
+        audioTime: 'Audio thuyết minh 2:30',
+        title: 'Sân Phơi Giấy Dó & Điệp Son Truyền Thống',
+        desc: 'Những nong quạt giấy dó, quạt lụa nhuộm màu củ nâu, phết nhựa cậy được phơi thẳng hàng dưới nắng hanh xứ Đoài. Độ bám dính của nhựa cậy tự nhiên giúp mặt quạt trải qua hàng chục năm vẫn giữ nguyên vẹn hoa văn và không bị ẩm mốc.',
+        caption: 'Sân phơi giấy dó Chàng Sơn',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCA5QnjZQuqLHqobuc7zUQbVPUYOIjFfA6TQae5MfTYYLxdVMEAtbtpqQ1fQ51PLm7NIx0llbJqTXXWN0XpmOoQTEOgMar-huxgW_bHpc72s7_mW2V4vTeagEUBP4NKZyGOc0A8c0NSll8yKh0r3LCSvYESBRNw_MWjSVMSWfX3t9kcz48ShH9g4clZ8bmYtJud-fVyp40lFWw9rjmlGPIY_xyfeUTf8L-JpnfD88jb'
+      },
+      guide: {
+        tag: 'Hướng dẫn tương tác',
+        audioTime: 'Trải nghiệm mượt mà',
+        title: 'Mẹo Điều Khiển Góc Nhìn 360° & Khám Phá Chi Tiết',
+        desc: 'Sử dụng cụm phím W-A-S-D hoặc giữ rê chuột trái để di chuyển góc nhìn vòng quanh làng. Nhấp trực tiếp vào các trạm số 1, 2, 3, 4 trên bản đồ để xem trước thông tin công đoạn và nhập vai nghệ nhân Chàng Sơn!',
+        caption: 'Điều hướng 3D ảo',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCA5QnjZQuqLHqobuc7zUQbVPUYOIjFfA6TQae5MfTYYLxdVMEAtbtpqQ1fQ51PLm7NIx0llbJqTXXWN0XpmOoQTEOgMar-huxgW_bHpc72s7_mW2V4vTeagEUBP4NKZyGOc0A8c0NSll8yKh0r3LCSvYESBRNw_MWjSVMSWfX3t9kcz48ShH9g4clZ8bmYtJud-fVyp40lFWw9rjmlGPIY_xyfeUTf8L-JpnfD88jb'
+      }
+    };
+
+    function switchSpaceTab(tabKey) {
+      const item = spaceData[tabKey];
+      if (!item) return;
+
+      document.getElementById('space-tag').textContent = item.tag;
+      document.getElementById('space-audio-time').textContent = item.audioTime;
+      document.getElementById('space-title').textContent = item.title;
+      document.getElementById('space-description').textContent = item.desc;
+      document.getElementById('space-caption').textContent = item.caption;
+      document.getElementById('space-img').src = item.img;
+
+      // Update active tab button styles
+      document.querySelectorAll('.space-tab-btn').forEach(btn => {
+        if (btn.getAttribute('data-target') === tabKey) {
+          btn.classList.remove('text-on-surface-variant');
+          btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+        } else {
+          btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+          btn.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+
+    // Station selection switcher
+    const stationData = {
+      1: {
+        title: 'Trạm 1: Nghệ Thuật Chọn Tre',
+        desc: 'Khởi đầu linh hồn chiếc quạt Chàng Sơn nằm ở chất tre nứa xứ Đoài. Tre phải tròn lóng, không sâu mọt, được ngâm bùn ao đủ tháng để chống mối mọt tự nhiên không hóa chất.',
+        btnText: 'Bước vào Trạm 1 – Chọn tre',
+        path: 'station-1',
+        isLocked: false,
+        avatarX: '32%',
+        avatarY: '68%'
+      },
+      2: {
+        title: 'Trạm 2: Tạo Nan & Uốn Dáng',
+        desc: 'Nghệ nhân dùng dao chuyên dụng chẻ nan mỏng như tờ giấy, vót đều đặn hai đầu rồi uốn nhiệt tạo thế nan dẻo dai vững chắc mở ra góc 180 độ hoàn mỹ.',
+        btnText: 'Trạm 2 đang khóa (Hãy hoàn thành trạm 1)',
+        path: 'station-2',
+        isLocked: true,
+        avatarX: '45%',
+        avatarY: '48%'
+      },
+      3: {
+        title: 'Trạm 3: Dán Mật & Phết Nhựa Cậy',
+        desc: 'Kỹ thuật dán giấy Dó hoặc lụa tơ tằm bằng nhựa cậy tự nhiên dính chặt nghìn năm không bong tróc, đòi hỏi đôi bàn tay nhịp nhàng không để nhăn gãy.',
+        btnText: 'Trạm 3 đang khóa',
+        path: 'station-3',
+        isLocked: true,
+        avatarX: '65%',
+        avatarY: '54%'
+      },
+      4: {
+        title: 'Trạm 4: Hoàn Thiện & Đóng Triện',
+        desc: 'Tán đinh nhôm chốt nan trục quạt, tỉa viền giấy thừa và đóng dấu triện son đỏ Chàng Sơn xác nhận chiếc quạt thủ công độc bản hoàn thành.',
+        btnText: 'Trạm 4 đang khóa',
+        path: 'station-4',
+        isLocked: true,
+        avatarX: '80%',
+        avatarY: '70%'
+      }
+    };
+
+    function selectStation(stationId) {
+      const data = stationData[stationId];
+      if (!data) return;
+
+      const titleEl = document.getElementById('station-detail-title');
+      const descEl = document.getElementById('station-detail-desc');
+      const ctaEl = document.getElementById('station-detail-cta');
+      const avatarEl = document.getElementById('traveler-avatar');
+
+      if (titleEl) titleEl.textContent = data.title;
+      if (descEl) descEl.textContent = data.desc;
+
+      if (ctaEl) {
+        ctaEl.querySelector('span:first-child').textContent = data.btnText;
+        ctaEl.setAttribute('data-path', data.path);
+        
+        if (data.isLocked) {
+          ctaEl.classList.remove('bg-primary', 'hover:bg-tertiary', 'text-on-primary');
+          ctaEl.classList.add('bg-surface-container-high', 'text-outline', 'pointer-events-none');
+        } else {
+          ctaEl.classList.remove('bg-surface-container-high', 'text-outline', 'pointer-events-none');
+          ctaEl.classList.add('bg-primary', 'hover:bg-tertiary', 'text-on-primary');
+        }
+      }
+
+      if (avatarEl) {
+        avatarEl.style.left = data.avatarX;
+        avatarEl.style.top = data.avatarY;
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl shadow-[0_-1px_12px_rgba(48,39,32,0.03)]"><div class="max-w-[1280px] mx-auto px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="md:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="KÉN Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrD_TUkeTZh86S1o5VW8J1k5Gkh_jTKBOrYfF9c0HdxhlALttbpRL96RKRq8msH0Yuq7CyrSoJ00VoM3wvkgVR5qstmz-Kf0xYb1hVta_FL2lFo_AT12JqqnNV4o-s0P-ED1eoz72kxU8DoQSC4pyXaPPtgJqUjR02eEaJRkQZlXb7KVQdSx97Q-nNZSa0fgoh3mWYst-TgQe2_9dG06KXbmRqE2yiTKxnAuZc1MY_aA"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-wide">KÉN</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Kén - Kết tinh từ văn hóa Việt, gửi trao niềm tự hào. Trải nghiệm số hóa nghề làm quạt truyền thống Chàng Sơn, nâng tầm di sản dân tộc qua góc nhìn đương đại.</p><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary bg-surface-container px-space-md py-1.5 rounded-lg w-fit"><span class="material-symbols-outlined text-[16px]">verified</span><span>Di sản làng nghề Chàng Sơn, Thạch Thất, Hà Nội</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md font-bold text-on-surface mb-space-xs">Hành trình KÉN</h4><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Kể chuyện văn hóa</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="map" href="#">Bản đồ làng quạt ảo</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="station-1" href="#">4 Trạm chế tác thủ công</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="passport" href="#">Hộ chiếu &amp; Workshop</a></nav></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md font-bold text-on-surface mb-space-xs">Kết nối di sản</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Cộng đồng yêu quạt thủ công &amp; sản phẩm văn hóa Việt sáng tạo.</p><a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-semibold hover:text-tertiary transition-colors" href="https://linktr.ee/ken.quatangviet" rel="noopener noreferrer" target="_blank"><span>linktr.ee/ken.quatangviet</span><span class="material-symbols-outlined text-[16px]">arrow_outward</span></a><div class="flex items-center gap-space-sm mt-space-xs"><span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">share</span></span><span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">mail</span></span><span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">public</span></span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-high/30 px-space-lg py-space-md rounded-lg"><p class="font-label-sm text-label-sm text-on-surface-variant">© 2026 KÉN - Quà Tặng Việt. Mọi quyền được bảo lưu.</p><p class="font-label-sm text-label-sm text-on-surface-variant">Bảo tồn &amp; Phát huy Di sản Làng nghề Chàng Sơn</p></div></div></footer>
+
+</body></html>
