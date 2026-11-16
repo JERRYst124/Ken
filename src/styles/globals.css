@@ -2352,9 +2352,10 @@ a {
 .passport-stamps p { margin: 2px 0 0; color: var(--color-ink-soft); font-size: 10px; }
 .passport-card footer { padding: 12px 30px; background: #faf3ee; color: var(--color-ink-soft); font-size: 9px; }
 .passport-card footer b { float: right; color: var(--color-secondary); }
-.passport-actions { display: flex; gap: 10px; margin-top: 14px; }
+.passport-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
 .passport-actions button, .passport-voucher button, .passport-workshop button { border: 1px solid var(--color-primary); border-radius: 5px; background: #fff; color: var(--color-primary); padding: 10px 14px; font-size: 10px; font-weight: 700; letter-spacing: .08em; }
 .passport-actions button:first-child, .passport-workshop button { background: var(--color-primary); color: #fff; }
+.passport-download-error { margin: 8px 0 0; color: var(--color-error); font-size: 10px; line-height: 1.5; }
 .passport-side { display: grid; align-content: start; gap: 16px; }
 .passport-artifact { overflow: hidden; }
 .passport-artifact header { display: flex; justify-content: space-between; padding: 14px 16px; color: var(--color-secondary); font-size: 10px; letter-spacing: .1em; }

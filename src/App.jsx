@@ -47,6 +47,10 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [path]);
+
   const route = getRoute(path);
   const activePath = routes[route];
   const protectedRoute = ['map', 'station1', 'station2', 'station3', 'station4', 'passport'].includes(route);

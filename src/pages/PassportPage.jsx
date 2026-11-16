@@ -4,6 +4,28 @@ import { stitchAssets } from '../data/content';
 export function PassportPage() {
   const [workshopOpen, setWorkshopOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [downloadError, setDownloadError] = useState('');
+
+  const downloadPassport = async () => {
+    setDownloadError('');
+    try {
+      const response = await fetch(stitchAssets.passportFan);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'ken-ho-chieu-van-hoa.jpg';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Không thể tải ảnh hộ chiếu KÉN.', error);
+      setDownloadError('Không thể tải ảnh lúc này. Hãy thử lại hoặc mở ảnh sản phẩm rồi lưu ảnh.');
+    }
+  };
 
   return (
     <main className="passport-page">
@@ -21,7 +43,8 @@ export function PassportPage() {
             <div className="passport-stamps">{['Nguyên Liệu', 'Khung Xương', 'Dán Giấy & Lụa', 'Thổi Hồn Di Sản'].map((name, index) => <article key={name}><b>◈</b><div><strong>Trạm {index + 1}: {name}</strong><p>{['Tre bánh tẻ Chàng Sơn', 'Tạo Nan Bán Nguyệt', 'Dán Lụa Tơ Tằm', 'Thổi Hồn Di Sản'][index]}</p></div></article>)}</div>
             <footer>◉ Chứng thực bởi Hiệp hội Nghệ nhân truyền thống Chàng Sơn <b>KÉN DIGITAL ARCHIVE 2026</b></footer>
           </div>
-          <div className="passport-actions"><button type="button" onClick={() => setSubmitted(true)}>⇩ TẢI ẢNH HỘ CHIẾU VĂN HÓA</button><button type="button" onClick={() => setSubmitted(true)}>⌯ CHIA SẺ LÊN MẠNG XÃ HỘI</button></div>
+          <div className="passport-actions"><button type="button" onClick={downloadPassport}>⇩ TẢI ẢNH HỘ CHIẾU VĂN HÓA</button><button type="button" onClick={() => setSubmitted(true)}>⌯ CHIA SẺ LÊN MẠNG XÃ HỘI</button></div>
+          {downloadError && <p className="passport-download-error" role="alert">{downloadError}</p>}
         </section>
         <aside className="passport-side">
           <section className="passport-artifact"><header><b>THÀNH PHẨM THỦ CÔNG SỐ HÓA</b><small>Tỉ lệ 1:1</small></header><img alt="Quạt lụa Chim Lạc Sắc Đỏ Son" src={stitchAssets.passportFan} /><b>● Quạt Lụa Chim Lạc Sắc Đỏ Son</b><div><span>Nan cốt<strong>11 nan</strong></span><span>Chất liệu<strong>Lụa tơ tằm</strong></span><span>Họa tiết<strong>Chim Lạc</strong></span></div></section>

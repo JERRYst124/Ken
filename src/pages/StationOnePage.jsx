@@ -20,7 +20,7 @@ const samples = [
     name: 'Tre bánh tẻ (3-4 năm)',
     meta: 'Vàng óng mộc • Gióng đanh',
     description: 'Thớ tre đặc quánh, lượng nước tối thiểu, độ uốn dẻo tuyệt vời chịu lực mở gập hàng nghìn lần.',
-    image: stitchAssets.mapStation,
+    image: stitchAssets.bambooMature,
     result: 'Mẫu B: Tuyệt hảo! Tre bánh tẻ già vừa độ',
     detail: 'Chính xác! Nghệ nhân Chàng Sơn luôn chọn tre từ 3 đến 4 năm tuổi. Thân tre đanh chắc, mật độ thớ thịt mịn đồng đều.',
     correct: true,
@@ -94,8 +94,7 @@ export function StationOnePage() {
           <div className="stitch-card stitch-arena-card">
             <div className="stitch-arena-intro"><div><span className="stitch-label">◉ Tương tác trực quan</span><h1>Đấu trường tuyển chọn thanh tre mẫu</h1><p>Hãy quan sát kỹ màu sắc vỏ, độ dày thớ thịt và mật độ nước bên trong từng mẫu. Chọn gióng tre bánh tẻ đạt độ dẻo dai thích hợp nhất để làm nan quạt truyền thống.</p></div><span className={`stitch-status ${selected?.correct ? 'is-good' : ''}`}>{selected?.correct ? 'Mẫu tre thượng hạng' : 'Chưa chọn mẫu tre'}</span></div>
             <div className="stitch-sample-grid">
-              {samples.map((sample) => <button className={`stitch-sample ${selected?.id === sample.id ? 'is-selected' : ''} ${sample.correct ? 'is-recommended' : ''}`} key={sample.id} onClick={() => selectSample(sample)} type="button">
-                {sample.correct && <span className="stitch-recommended">★ Đề xuất nghệ nhân</span>}
+              {samples.map((sample) => <button className={`stitch-sample ${selected?.id === sample.id ? 'is-selected' : ''}`} key={sample.id} onClick={() => selectSample(sample)} type="button">
                 <div className="stitch-sample-image"><img alt={sample.name} src={sample.image} /><b>Mẫu {sample.id}</b><span>{sample.correct ? '✥' : '◌'}</span></div>
                 <strong>{sample.name}</strong><em>{sample.meta}</em><p>{sample.description}</p><small>Kiểm định mẫu {sample.id} ›</small>
               </button>)}
